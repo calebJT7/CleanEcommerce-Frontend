@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const api = axios.create({
     // Vercel buscará esta variable. Si no la encuentra, usa la de Azure como respaldo
-    baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://api-caleb-ecommerce-fzbqhjhhhufzcybp.centralus-01.azurewebsites.net/',
+    baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://api-caleb-ecommerce-fzbqhjhhhufzcybp.centralus-01.azurewebsites.net/api',
     headers: {
         'Content-Type': 'application/json',
     },
